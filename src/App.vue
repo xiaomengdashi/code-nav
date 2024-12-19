@@ -1,7 +1,7 @@
 <template>
-  <el-container style="height: 100vh; margin: 0; padding: 0;">
+  <div style="height: 100vh; margin: 0; padding: 0;">
     <!-- 左侧导航 -->
-    <el-aside width="200px" style="background-color: #333; color: #fff;">
+    <el-aside width="200px" class="aside-nav">
       <div class="logo-container">
         <img src="/logo.png" alt="logo" class="logo">
         <h2>网址收藏</h2>
@@ -13,7 +13,12 @@
         text-color="#fff"
         active-text-color="#409EFF"
       >
-        <el-menu-item v-for="(section, index) in sections" :key="index" :index="index + 1">
+        <el-menu-item 
+          v-for="(section, index) in sections" 
+          :key="index" 
+          :index="String(index + 1)"
+          @click="scrollToSection(index)"
+        >
           <a :href="`#section-${index + 1}`">
             <img :src="section.icon" alt="icon" class="custom-icon" />
             <span>{{ section.title }}</span>
@@ -23,43 +28,41 @@
     </el-aside>
 
     <!-- 右侧内容区 -->
-    <el-container direction="vertical">
-      <el-main class="main-content">
-        <div 
-          class="section" 
-          v-for="(section, sIndex) in sections" 
-          :key="sIndex"
-          :id="`section-${sIndex + 1}`"
-        >
-          <h2 class="section-title">{{ section.title }}</h2>
-          <el-row :gutter="20">
-            <el-col 
-              :span="6" 
-              v-for="(item, index) in section.items" 
-              :key="index"
+    <el-container class="main-content" direction="vertical">
+      <div 
+        class="section" 
+        v-for="(section, sIndex) in sections" 
+        :key="sIndex"
+        :id="`section-${sIndex + 1}`"
+      >
+        <h2 class="section-title">{{ section.title }}</h2>
+        <el-row :gutter="20">
+          <el-col 
+            :span="6" 
+            v-for="(item, index) in section.items" 
+            :key="index"
+          >
+            <el-card 
+              shadow="hover" 
+              class="nav-card"
+              @click="openLink(item.url)"
             >
-              <el-card 
-                shadow="hover" 
-                class="nav-card"
-                @click="openLink(item.url)"
-              >
-                <div class="nav-card-content">
-                  <img :src="item.icon" class="nav-icon" />
-                  <div class="nav-info">
-                    <h3>{{ item.title }}</h3>
-                    <p>{{ item.description }}</p>
-                  </div>
+              <div class="nav-card-content">
+                <img :src="item.icon" class="nav-icon" />
+                <div class="nav-info">
+                  <h3>{{ item.title }}</h3>
+                  <p>{{ item.description }}</p>
                 </div>
-              </el-card>
-            </el-col>
-          </el-row>
-        </div>
-      </el-main>
-      <el-footer class="footer">
+              </div>
+            </el-card>
+          </el-col>
+        </el-row>
+      </div>
+    </el-container>
+    <el-footer class="footer">
         © 2024 编程导航 | 所有权利保留
       </el-footer>
-    </el-container>
-  </el-container>
+  </div>
 </template>
 
 <script setup>
@@ -72,9 +75,26 @@ const sections = ref(sectionsData)
 const openLink = (url) => {
   window.open(url, '_blank')
 }
+
+const scrollToSection = (index) => {
+  const section = document.getElementById(`section-${index + 1}`);
+  section?.scrollIntoView({ behavior: 'smooth' });
+}
 </script>
 
 <style scoped>
+.aside-nav {
+  background-color: #333;
+  color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
 .logo-container {
   padding: 20px;
   text-align: center;
@@ -106,16 +126,22 @@ const openLink = (url) => {
 }
 
 .main-content {
+  margin-left: 200px;
   background-color: #f5f7fa;
   padding: 20px;
-  overflow-y: auto;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth;  /* 已添加平滑滚动 */
   flex: 1;
+  min-height: 100vh;
+  width: calc(100% - 200px);
+  position: relative;
+  overflow-y: auto;
 }
 
 .section {
   margin-bottom: 30px;
   scroll-margin-top: 20px;
+  width: 100%;
+  padding: 0px;
 }
 
 .section-title {
@@ -127,8 +153,9 @@ const openLink = (url) => {
 }
 
 .nav-card {
+  width: 100%;
   cursor: pointer;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   border: none;
   transition: all 0.3s;
 }
@@ -175,9 +202,24 @@ const openLink = (url) => {
   padding: 10px 0;
   font-size: 14px;
   width: 100%;
+  position: sticky;
+  bottom: 0;
 }
 
 :deep(.el-card__body) {
   padding: 15px;
+}
+
+.el-row {
+  width: 100%;
+  margin: 0 !important;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.el-col {
+  display: flex;
+  padding: 10px !important;
 }
 </style>

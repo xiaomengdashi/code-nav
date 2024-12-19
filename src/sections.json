@@ -26,13 +26,115 @@
         "title": "Tailwind CSS",
         "description": "功能类优先的 CSS 框架",
         "url": "https://tailwindcss.com"
+      },
+      {
+        "icon": "/icons/github.svg",
+        "title": "Github",
+        "description": "全球最大的代码托管平台",
+        "url": "https://github.com"
+      },
+      {
+        "icon": "/icons/element-plus.svg",
+        "title": "Element Plus",
+        "description": "Vue 3 的组件库",
+        "url": "https://element-plus.org"
+      },
+      {
+        "icon": "/icons/ant-design.svg",
+        "title": "Ant Design",
+        "description": "企业级 UI 设计语言",
+        "url": "https://ant.design"
+      },
+      {
+        "icon": "/icons/tailwindcss.svg",
+        "title": "Tailwind CSS",
+        "description": "功能类优先的 CSS 框架",
+        "url": "https://tailwindcss.com"
+      },
+      {
+        "icon": "/icons/github.svg",
+        "title": "Github",
+        "description": "全球最大的代码托管平台",
+        "url": "https://github.com"
+      },
+      {
+        "icon": "/icons/element-plus.svg",
+        "title": "Element Plus",
+        "description": "Vue 3 的组件库",
+        "url": "https://element-plus.org"
+      },
+      {
+        "icon": "/icons/ant-design.svg",
+        "title": "Ant Design",
+        "description": "企业级 UI 设计语言",
+        "url": "https://ant.design"
+      },
+      {
+        "icon": "/icons/tailwindcss.svg",
+        "title": "Tailwind CSS",
+        "description": "功能类优先的 CSS 框架",
+        "url": "https://tailwindcss.com"
       }
     ]
   },
   {
     "title": "前端常用",
-    "icon": "Monitor",
+    "icon": "/icons/ant-design.svg",
     "items": [
+      {
+        "icon": "/icons/element-plus.svg",
+        "title": "Element Plus",
+        "description": "Vue 3 的组件库",
+        "url": "https://element-plus.org"
+      },
+      {
+        "icon": "/icons/element-plus.svg",
+        "title": "Element Plus",
+        "description": "Vue 3 的组件库",
+        "url": "https://element-plus.org"
+      },
+      {
+        "icon": "/icons/element-plus.svg",
+        "title": "Element Plus",
+        "description": "Vue 3 的组件库",
+        "url": "https://element-plus.org"
+      },
+      {
+        "icon": "/icons/element-plus.svg",
+        "title": "Element Plus",
+        "description": "Vue 3 的组件库",
+        "url": "https://element-plus.org"
+      },
+      {
+        "icon": "/icons/element-plus.svg",
+        "title": "Element Plus",
+        "description": "Vue 3 的组件库",
+        "url": "https://element-plus.org"
+      },
+      {
+        "icon": "/icons/element-plus.svg",
+        "title": "Element Plus",
+        "description": "Vue 3 的组件库",
+        "url": "https://element-plus.org"
+      },
+      {
+        "icon": "/icons/element-plus.svg",
+        "title": "Element Plus",
+        "description": "Vue 3 的组件库",
+        "url": "https://element-plus.org"
+      },
+      {
+        "icon": "/icons/element-plus.svg",
+        "title": "Element Plus",
+        "description": "Vue 3 的组件库",
+        "url": "https://element-plus.org"
+      },
+      {
+        "icon": "/icons/element-plus.svg",
+        "title": "Element Plus",
+        "description": "Vue 3 的组件库",
+        "url": "https://element-plus.org"
+      },
       {
         "icon": "/icons/element-plus.svg",
         "title": "Element Plus",
@@ -217,7 +319,7 @@
   },
   {
     "title": "Vue生态",
-    "icon": "Menu",
+    "icon": "/icons/c.svg",
     "items": [
         {
             "icon": "/icons/vuejs.svg",
@@ -230,12 +332,30 @@
             "title": "React",
             "description": "用于构建用户界面的 JavaScript 库",
             "url": "https://zh-hans.react.dev/"
+        },
+        {
+          "icon": "/icons/vuejs.svg",
+          "title": "Vue.js",
+          "description": "渐进式 JavaScript 框架",
+          "url": "https://vuejs.org"
+        },
+        {
+          "icon": "/icons/vuejs.svg",
+          "title": "Vue.js",
+          "description": "渐进式 JavaScript 框架",
+          "url": "https://vuejs.org"
+        },
+        {
+          "icon": "/icons/vuejs.svg",
+          "title": "Vue.js",
+          "description": "渐进式 JavaScript 框架",
+          "url": "https://vuejs.org"
         }
     ]
   },
   {
     "title": "Vue生态",
-    "icon": "Setting",
+    "icon": "/icons/linux.svg",
     "items": [
         {
             "icon": "/icons/vuejs.svg",
