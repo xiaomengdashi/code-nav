@@ -1,0 +1,254 @@
+[
+  {
+    "title": "个人站点",
+    "icon": "/icons/my-site.svg",
+    "items": [
+      {
+        "icon": "/icons/github.svg",
+        "title": "Github",
+        "description": "全球最大的代码托管平台",
+        "url": "https://github.com"
+      },
+      {
+        "icon": "/icons/element-plus.svg",
+        "title": "Element Plus",
+        "description": "Vue 3 的组件库",
+        "url": "https://element-plus.org"
+      },
+      {
+        "icon": "/icons/ant-design.svg",
+        "title": "Ant Design",
+        "description": "企业级 UI 设计语言",
+        "url": "https://ant.design"
+      },
+      {
+        "icon": "/icons/tailwindcss.svg",
+        "title": "Tailwind CSS",
+        "description": "功能类优先的 CSS 框架",
+        "url": "https://tailwindcss.com"
+      }
+    ]
+  },
+  {
+    "title": "前端常用",
+    "icon": "Monitor",
+    "items": [
+      {
+        "icon": "/icons/element-plus.svg",
+        "title": "Element Plus",
+        "description": "Vue 3 的组件库",
+        "url": "https://element-plus.org"
+      },
+      {
+        "icon": "/icons/element-plus.svg",
+        "title": "Element Plus",
+        "description": "Vue 3 的组件库",
+        "url": "https://element-plus.org"
+      },
+      {
+        "icon": "/icons/element-plus.svg",
+        "title": "Element Plus",
+        "description": "Vue 3 的组件库",
+        "url": "https://element-plus.org"
+      },
+      {
+        "icon": "/icons/element-plus.svg",
+        "title": "Element Plus",
+        "description": "Vue 3 的组件库",
+        "url": "https://element-plus.org"
+      },
+      {
+        "icon": "/icons/element-plus.svg",
+        "title": "Element Plus",
+        "description": "Vue 3 的组件库",
+        "url": "https://element-plus.org"
+      },
+      {
+        "icon": "/icons/element-plus.svg",
+        "title": "Element Plus",
+        "description": "Vue 3 的组件库",
+        "url": "https://element-plus.org"
+      },
+      {
+        "icon": "/icons/element-plus.svg",
+        "title": "Element Plus",
+        "description": "Vue 3 的组件库",
+        "url": "https://element-plus.org"
+      },
+      {
+        "icon": "/icons/element-plus.svg",
+        "title": "Element Plus",
+        "description": "Vue 3 的组件库",
+        "url": "https://element-plus.org"
+      }
+    ]
+  },
+  {
+    "title": "UI框架",
+    "icon": "/icons/linux.svg",
+    "items": [
+        {
+            "icon": "/icons/element-plus.svg",
+            "title": "Element Plus",
+            "description": "Vue 3 的组件库",
+            "url": "https://element-plus.org"
+        },
+        {
+            "icon": "/icons/element-plus.svg",
+            "title": "Element Plus",
+            "description": "Vue 3 的组件库",
+            "url": "https://element-plus.org"
+        }
+    ]
+  },
+  {
+    "title": "React生态",
+    "icon": "/icons/react.svg",
+    "items": [
+        {
+            "icon": "/icons/juejin.svg",
+            "title": "掘金",
+            "description": "优质的开发者社区",
+            "url": "https://juejin.cn"
+        },
+        {
+          "icon": "/icons/react.svg",
+          "title": "React",
+          "description": "用于构建用户界面的 JavaScript 库",
+          "url": "https://zh-hans.react.dev/"
+        }
+    ]
+  },
+  {
+    "title": "Rust生态",
+    "icon": "/icons/rust.svg",
+    "items": [
+        {
+            "icon": "/icons/rust.svg",
+            "title": "Rust 官网",
+            "description": "Rust 程序设计语言",
+            "url": "https://www.rust-lang.org/zh-CN/"
+        },
+        {
+            "icon": "/icons/rust.svg",
+            "title": "Rust圣经",
+            "description": "Rust圣经",
+            "url": "https://buwu-dwj.github.io/book/html/rust/rust_holy/pre.html"
+        },
+        {
+            "icon": "/icons/rust.svg",
+            "title": "Lib.rs • Rust 包仓库",
+            "description": "Lib.rs — Rust 包的家园",
+            "url": "https://crates.org.cn/"
+        }
+    ]
+  },
+  {
+    "title": "Vue生态",
+    "icon": "/icons/vuejs.svg",
+    "items": [
+        {
+            "icon": "/icons/vuejs.svg",
+            "title": "Vue.js",
+            "description": "渐进式 JavaScript 框架",
+            "url": "https://vuejs.org"
+        },
+        {
+            "icon": "/icons/react.svg",
+            "title": "React",
+            "description": "用于构建用户界面的 JavaScript 库",
+            "url": "https://zh-hans.react.dev/"
+        }
+    ]
+  },
+  {
+    "title": "Vue生态",
+    "icon": "/icons/go.svg",
+    "items": [
+        {
+            "icon": "/icons/vuejs.svg",
+            "title": "Vue.js",
+            "description": "渐进式 JavaScript 框架",
+            "url": "https://vuejs.org"
+        },
+        {
+            "icon": "/icons/react.svg",
+            "title": "React",
+            "description": "用于构建用户界面的 JavaScript 库",
+            "url": "https://zh-hans.react.dev/"
+        }
+    ]
+  },
+  {
+    "title": "Vue生态",
+    "icon": "/icons/c.svg",
+    "items": [
+        {
+            "icon": "/icons/vuejs.svg",
+            "title": "Vue.js",
+            "description": "渐进式 JavaScript 框架",
+            "url": "https://vuejs.org"
+        },
+        {
+            "icon": "/icons/react.svg",
+            "title": "React",
+            "description": "用于构建用户界面的 JavaScript 库",
+            "url": "https://zh-hans.react.dev/"
+        }
+    ]
+  },
+  {
+    "title": "Vue生态",
+    "icon": "/icons/python.svg",
+    "items": [
+        {
+            "icon": "/icons/vuejs.svg",
+            "title": "Vue.js",
+            "description": "渐进式 JavaScript 框架",
+            "url": "https://vuejs.org"
+        },
+        {
+            "icon": "/icons/react.svg",
+            "title": "React",
+            "description": "用于构建用户界面的 JavaScript 库",
+            "url": "https://zh-hans.react.dev/"
+        }
+    ]
+  },
+  {
+    "title": "Vue生态",
+    "icon": "Menu",
+    "items": [
+        {
+            "icon": "/icons/vuejs.svg",
+            "title": "Vue.js",
+            "description": "渐进式 JavaScript 框架",
+            "url": "https://vuejs.org"
+        },
+        {
+            "icon": "/icons/react.svg",
+            "title": "React",
+            "description": "用于构建用户界面的 JavaScript 库",
+            "url": "https://zh-hans.react.dev/"
+        }
+    ]
+  },
+  {
+    "title": "Vue生态",
+    "icon": "Setting",
+    "items": [
+        {
+            "icon": "/icons/vuejs.svg",
+            "title": "Vue.js",
+            "description": "渐进式 JavaScript 框架",
+            "url": "https://vuejs.org"
+        },
+        {
+            "icon": "/icons/react.svg",
+            "title": "React",
+            "description": "用于构建用户界面的 JavaScript 库",
+            "url": "https://zh-hans.react.dev/"
+        }
+    ]
+  }
+] 
