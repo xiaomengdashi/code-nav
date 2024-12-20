@@ -61,16 +61,22 @@
     </el-container>
     <el-footer class="footer">
         © 2024 编程导航 | 所有权利保留
-      </el-footer>
+    </el-footer>
+
+    <!-- 滑动到顶部图标 -->
+    <div v-show="showScrollTop" class="scroll-top" @click="scrollToTop">
+      ↑
+    </div>
   </div>
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue'
 import sectionsData from './sections.json'
 
 const activeIndex = ref('1')
 const sections = ref(sectionsData)
+const showScrollTop = ref(false)
 
 const openLink = (url) => {
   window.open(url, '_blank')
@@ -80,6 +86,22 @@ const scrollToSection = (index) => {
   const section = document.getElementById(`section-${index + 1}`);
   section?.scrollIntoView({ behavior: 'smooth' });
 }
+
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+const handleScroll = () => {
+  showScrollTop.value = window.scrollY > 200;
+}
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll);
+})
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll);
+})
 </script>
 
 <style scoped>
@@ -129,7 +151,7 @@ const scrollToSection = (index) => {
   margin-left: 200px;
   background-color: #f5f7fa;
   padding: 20px;
-  scroll-behavior: smooth;  /* 已添加平滑滚动 */
+  scroll-behavior: smooth;
   flex: 1;
   min-height: 100vh;
   width: calc(100% - 200px);
@@ -204,6 +226,24 @@ const scrollToSection = (index) => {
   width: 100%;
   position: sticky;
   bottom: 0;
+}
+
+.scroll-top {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background-color: #409EFF;
+  color: white;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 :deep(.el-card__body) {
