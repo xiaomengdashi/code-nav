@@ -154,6 +154,12 @@
           "url": "https://www.rust-lang.org/zh-CN/"
       },
       {
+        "icon": "/icons/rust.svg",
+        "title": "Rust语言圣经(Rust Course)",
+        "description": "Rust圣经",
+        "url": "https://course.rs/about-book.html"
+      },
+      {
           "icon": "/icons/rust.svg",
           "title": "Rust语言圣经",
           "description": "Rust圣经",
@@ -200,6 +206,30 @@
           "title": "Rust在线",
           "description": "在线的 Rust 代码编辑器和运行环境",
           "url": "https://play.rust-lang.org/?version=stable&mode=debug&edition=2021"
+      },
+      {
+        "icon": "/icons/Actix Web.png",
+        "title": "Actix Web",
+        "description": "a powerful,pragmatic,and extremely fast web framework",
+        "url": "https://actix.rs/"
+      },
+      {
+        "icon": "/icons/Actix Web.png",
+        "title": "Actix",
+        "description": "一个功能强大、实用、极速的 Rust Web 框架",
+        "url": "https://tech-cn.github.io/actix-website/"
+      },
+      {
+        "icon": "/icons/rust.svg",
+        "title": "Serde",
+        "description": "Serde 教程",
+        "url": "https://serde-zh.netlify.app/"
+      },
+      {
+        "icon": "/icons/rust.svg",
+        "title": "Rust入门秘籍",
+        "description": "一本Rust的入门书籍",
+        "url": "https://rust-book.junmajinlong.com/"
       }
     ]
   },
@@ -232,16 +262,16 @@
     "icon": "/icons/ant-design.svg",
     "items": [
       {
-        "icon": "/icons/element-plus.svg",
-        "title": "Element Plus",
-        "description": "Vue 3 的组件库",
-        "url": "https://element-plus.org"
+        "icon": "https://echarts.apache.org/zh/images/favicon.png?_v_=20240226",
+        "title": "Apache ECharts",
+        "description": "一个基于 JavaScript 的开源可视化图表库",
+        "url": "https://echarts.apache.org/zh/index.html"
       },
       {
-        "icon": "/icons/element-plus.svg",
-        "title": "Element Plus",
-        "description": "Vue 3 的组件库",
-        "url": "https://element-plus.org"
+        "icon": "https://mtruning.club/logo-with-shadow.png",
+        "title": "GoView",
+        "description": "低代码数据可视化",
+        "url": "https://mtruning.club/"
       }
     ]
   },
@@ -283,7 +313,7 @@
         "icon": "https://cdn.quasar.dev/logo-v2/svg/logo-dark.svg",
         "title": "Quasar",
         "description": "较成熟的组件库，大名鼎鼎，组件丰富到变态。",
-        "url": "https://vuetifyjs.com/zh-Hans/"
+        "url": "https://quasar.dev/"
       },
       {
         "icon": "/icons/material-ui.svg",
@@ -296,6 +326,42 @@
         "title": "Vue Material",
         "description": "一个轻量级的框架， 建立在谷歌的 Material Design 基础上",
         "url": "https://vuematerial.materializecss.cn"
+      },
+      {
+        "icon": "https://lf9-static.semi.design/obj/semi-tos/images/favicon.ico",
+        "title": "Semi Design",
+        "description": "连接设计师与开发者",
+        "url": "https://semi.design/zh-CN"
+      },
+      {
+        "icon": "https://uilibhub.com/favicon.png",
+        "title": "UILibHub",
+        "description": "Discover the best UI Library",
+        "url": "https://uilibhub.com/zh"
+      },
+      {
+        "icon": "https://ui-libs.com/favicon/palette.svg",
+        "title": "UI Lib Picker",
+        "description": "Pick the right UI Library",
+        "url": "https://ui-libs.com/"
+      },
+      {
+        "icon": "icons/layui.jpg",
+        "title": "layui - vue",
+        "description": "一 套 Vue 3.0 的 桌 面 端 组 件 库.",
+        "url": "https://www.layui-vue.com/zh-CN/index"
+      },
+      {
+        "icon": "icons/layui.jpg",
+        "title": "layui - vue",
+        "description": "一 套 Vue 3.0 的 桌 面 端 组 件 库.",
+        "url": "https://www.layui-vue.com/zh-CN/index"
+      },
+      {
+        "icon": "https://yue1123.github.io/vue3-baidu-map-gl/logo.svg",
+        "title": "Vue3 Baidu Map Gl",
+        "description": "Vue3 & BMapGL 组件库 + hooks 库",
+        "url": "https://yue1123.github.io/vue3-baidu-map-gl/"
       }
     ]
   },
@@ -307,7 +373,43 @@
           "icon": "/icons/vuejs.svg",
           "title": "Vue.js",
           "description": "渐进式 JavaScript 框架",
-          "url": "https://vuejs.org"
+          "url": "https://cn.vuejs.org/"
+      }, 
+      {
+        "icon": "/icons/vue3js.png",
+        "title": "Vue3 One Piece",
+        "description": "vue3中文, vue3js文档, vue3资料",
+        "url": "https://vue3js.cn/"
+      },
+      {
+        "icon": "https://pinia.vuejs.org/logo.svg",
+        "title": "Pinia",
+        "description": "符合直觉的 Vue.js 状态管理库",
+        "url": "https://pinia.vuejs.org/zh/"
+      },
+      {
+        "icon": "https://router.vuejs.org/logo.svg",
+        "title": "Vue Router",
+        "description": "Vue.js 的官方路由库",
+        "url": "https://router.vuejs.org/zh/"
+      },
+      {
+        "icon": "icons/Nuxt.png",
+        "title": "Nuxt",
+        "description": "直观的Vue 框架",
+        "url": "https://nuxtjs.org.cn/"
+      },
+      {
+        "icon": "/icons/vuejs.svg",
+        "title": "Vue-ECharts",
+        "description": "Vue.js component for Apache ECharts™. (docs)",
+        "url": "https://vue-echarts.dev/"
+      },
+      {
+        "icon": "vue-grid-layout.png",
+        "title": "Vue Grid Layout",
+        "description": "一个类似于Gridster的栅格布局系统, 适用于Vue.js",
+        "url": "https://jbaysolutions.github.io/vue-grid-layout/zh/"
       }
     ]
   },
