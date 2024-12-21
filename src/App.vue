@@ -1,10 +1,13 @@
 <template>
   <div style="height: 100vh; margin: 0; padding: 0;">
     <!-- 左侧导航 -->
-    <el-aside width="200px" class="aside-nav">
+    <el-aside :width="isCollapsed ? '60px' : '200px'" class="aside-nav">
       <div class="logo-container">
-        <img src="/logo.png" alt="logo" class="logo">
-        <h2>网址收藏</h2>
+        <img src="/logo.png" alt="logo" class="logo" v-if="!isCollapsed">
+        <h2 v-if="!isCollapsed">网址收藏</h2>
+        <button @click="toggleCollapse" class="collapse-button">
+          {{ isCollapsed ? '→' : '←' }}
+        </button>
       </div>
       <el-menu
         :default-active="activeIndex"
@@ -21,14 +24,14 @@
         >
           <a :href="`#section-${index + 1}`">
             <img :src="section.icon" alt="icon" class="custom-icon" />
-            <span>{{ section.title }}</span>
+            <span v-if="!isCollapsed">{{ section.title }}</span>
           </a>
         </el-menu-item>
       </el-menu>
     </el-aside>
 
     <!-- 右侧内容区 -->
-    <el-container class="main-content" direction="vertical">
+    <el-container :class="{'collapsed': isCollapsed}" class="main-content" direction="vertical">
       <div 
         class="section" 
         v-for="(section, sIndex) in sections" 
@@ -77,6 +80,7 @@ import sectionsData from './sections.json'
 const activeIndex = ref('1')
 const sections = ref(sectionsData)
 const showScrollTop = ref(false)
+const isCollapsed = ref(false)
 
 const openLink = (url) => {
   window.open(url, '_blank')
@@ -93,6 +97,10 @@ const scrollToTop = () => {
 
 const handleScroll = () => {
   showScrollTop.value = window.scrollY > 200;
+}
+
+const toggleCollapse = () => {
+  isCollapsed.value = !isCollapsed.value;
 }
 
 onMounted(() => {
@@ -115,18 +123,30 @@ onUnmounted(() => {
   top: 0;
   left: 0;
   z-index: 1000;
+  transition: width 0.3s;
 }
 
 .logo-container {
   padding: 20px;
   text-align: center;
   border-bottom: 1px solid #444;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
   width: 40px;
   height: 40px;
   margin-bottom: 10px;
+}
+
+.collapse-button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
 }
 
 .nav-menu {
@@ -157,6 +177,12 @@ onUnmounted(() => {
   width: calc(100% - 200px);
   position: relative;
   overflow-y: auto;
+  transition: margin-left 0.3s;
+}
+
+.main-content.collapsed {
+  margin-left: 60px;
+  width: calc(100% - 60px);
 }
 
 .section {
