@@ -259,6 +259,18 @@
         "title": "Rust Tutorial",
         "description": "Rust Tutorial",
         "url": "https://www.tutorialspoint.com/rust/index.htm"
+      },
+      {
+        "icon":"/icons/async-std.png",
+        "title":"async-std",
+        "description": "Async version of the Rust standard library",
+        "url": "https://async.rs/"
+      },
+      {
+        "icon":"/icons/tokio.jpg",
+        "title": "tokio",
+        "description":"A runtime for writing reliable asynchronous applications",
+        "url": "https://tokio.rs/"
       }
     ]
   },
