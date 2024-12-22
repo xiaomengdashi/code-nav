@@ -4,9 +4,9 @@
     <el-aside :width="isCollapsed ? '60px' : '200px'" class="aside-nav">
       <div class="logo-container">
         <img src="/logo.png" alt="logo" class="logo" v-if="!isCollapsed">
-        <h2 v-if="!isCollapsed">网址收藏</h2>
+        <h4 v-if="!isCollapsed">网址收藏</h4>
         <button @click="toggleCollapse" class="collapse-button">
-          {{ isCollapsed ? '→' : '←' }}
+          <img src="/icons/折叠菜单.svg" class="collapse-icon" />
         </button>
       </div>
       <el-menu
@@ -41,7 +41,7 @@
         <h2 class="section-title">{{ section.title }}</h2>
         <el-row :gutter="20">
           <el-col 
-            :span="6" 
+            :span="isMobile ? 12 : 6" 
             v-for="(item, index) in section.items" 
             :key="index"
           >
@@ -54,7 +54,7 @@
                 <img :src="item.icon" class="nav-icon" />
                 <div class="nav-info">
                   <h3>{{ item.title }}</h3>
-                  <p>{{ item.description }}</p>
+                  <p v-if="!isMobile">{{ item.description }}</p>
                 </div>
               </div>
             </el-card>
@@ -81,6 +81,7 @@ const activeIndex = ref('1')
 const sections = ref(sectionsData)
 const showScrollTop = ref(false)
 const isCollapsed = ref(false)
+const isMobile = ref(false)
 
 const openLink = (url) => {
   window.open(url, '_blank')
@@ -103,12 +104,22 @@ const toggleCollapse = () => {
   isCollapsed.value = !isCollapsed.value;
 }
 
+const checkMobile = () => {
+  isMobile.value = window.innerWidth <= 768;
+  if (isMobile.value) {
+    isCollapsed.value = true;
+  }
+}
+
 onMounted(() => {
   window.addEventListener('scroll', handleScroll);
+  window.addEventListener('resize', checkMobile);
+  checkMobile();
 })
 
 onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll);
+  window.removeEventListener('resize', checkMobile);
 })
 </script>
 
@@ -147,6 +158,11 @@ onUnmounted(() => {
   color: #fff;
   cursor: pointer;
   font-size: 16px;
+}
+
+.collapse-icon {
+  width: 20px;
+  height: 20px;
 }
 
 .nav-menu {
@@ -287,5 +303,17 @@ onUnmounted(() => {
 .el-col {
   display: flex;
   padding: 10px !important;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+  .el-col {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .nav-info p {
+    display: none;
+  }
 }
 </style>
