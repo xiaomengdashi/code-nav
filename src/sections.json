@@ -115,7 +115,7 @@
   },
   {
     "title": "C/C++生态",
-    "icon": "/icons/c++语言.svg",
+    "icon": "/icons/c++2.svg",
     "items": [
       {
           "icon": "/icons/cpp-logo.png",
@@ -261,7 +261,7 @@
         "url": "https://rust-guide.irust.net/zh-cn/index.html"
       },
       {
-        "icon": "/icons/tutorialspoint.ico",
+        "icon": "/icons/tutorialspoint.png",
         "title": "Rust Tutorial",
         "description": "Rust Tutorial",
         "url": "https://www.tutorialspoint.com/rust/index.htm"
@@ -333,6 +333,12 @@
     "icon": "/icons/前端.svg",
     "items": [
       {
+        "icon": "/icons/vuejs.svg",
+        "title": "Vue",
+        "description": "渐进式 JavaScript 框架",
+        "url": "https://cn.vuejs.org/"
+      }, 
+      {
         "icon": "/icons/react.svg",
         "title": "React",
         "description": "用于构建用户界面的 JavaScript 库",
@@ -393,7 +399,7 @@
         "url": "https://ant.design"
       },
       {
-        "icon": "/icons/ant-design-vue.ico",
+        "icon": "/icons/ant-design-vue.svg",
         "title": "Ant Design Vue",
         "description": "Ant Design 的 Vue 实现，开发和服务于企业级后台产品。",
         "url": "https://www.antdv.com/docs/vue/introduce-cn/"
@@ -445,6 +451,12 @@
         "title": "layui - vue",
         "description": "一 套 Vue 3.0 的 桌 面 端 组 件 库.",
         "url": "https://www.layui-vue.com/zh-CN/index"
+      },
+      {
+        "icon":"/icons/devui.png",
+        "title":"DevUI Design",
+        "description":"面向企业中后台产品的开源前端解决方案",
+        "url": "https://devui.design/home"
       }
     ]
   },
@@ -452,12 +464,6 @@
     "title": "Vue生态",
     "icon": "/icons/Vue.svg",
     "items": [
-      {
-          "icon": "/icons/vuejs.svg",
-          "title": "Vue.js",
-          "description": "渐进式 JavaScript 框架",
-          "url": "https://cn.vuejs.org/"
-      }, 
       {
         "icon": "/icons/vue3js.png",
         "title": "Vue3 One Piece",
@@ -499,12 +505,6 @@
         "title": "Vue3 Baidu Map Gl",
         "description": "Vue3 & BMapGL 组件库 + hooks 库",
         "url": "https://yue1123.github.io/vue3-baidu-map-gl/"
-      },
-      {
-        "icon":"/icons/devui.png",
-        "title":"DevUI Design",
-        "description":"面向企业中后台产品的开源前端解决方案",
-        "url": "https://devui.design/home"
       }
     ]
   },
