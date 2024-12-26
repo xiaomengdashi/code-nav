@@ -88,6 +88,12 @@
     "icon": "/icons/集成开发.svg",
     "items": [
       {
+        "icon":"/icons/hello_algo.svg",
+        "title":"《Hello 算法》",
+        "description":"Hello 算法 -- 数据结构与算法",
+        "url": "https://www.hello-algo.com/chapter_hello_algo/"
+      },
+      {
         "icon": "https://refactoringguru.cn/images/content-public/logos/logo-new-winter.png?id=85470d71f9cbeab1161d5cabc2e8296a",
         "title": "设计模式",
         "description": "免费在线学习代码重构和设计模式",
@@ -271,6 +277,24 @@
         "title": "tokio",
         "description":"A runtime for writing reliable asynchronous applications",
         "url": "https://tokio.rs/"
+      }
+    ]
+  },
+  {
+    "title": "Go生态",
+    "icon": "/icons/go.svg",
+    "items": [
+      {
+          "icon": "/icons/golang-copy.svg",
+          "title": "Go",
+          "description": "The Go Programming Language",
+          "url": "https://golang.google.cn/"
+      },
+      {
+          "icon": "/icons/gitbook2.svg",
+          "title": "《Go语言标准库》",
+          "description": "《Go语言标准库》The Golang Standard Library by Example",
+          "url": "https://books.studygolang.com/The-Golang-Standard-Library-by-Example/"
       }
     ]
   },
