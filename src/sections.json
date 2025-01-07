@@ -505,6 +505,12 @@
         "title": "Vue3 Baidu Map Gl",
         "description": "Vue3 & BMapGL 组件库 + hooks 库",
         "url": "https://yue1123.github.io/vue3-baidu-map-gl/"
+      },
+      {
+        "icon":"/icons/vuejs.svg",
+        "title":"VUE后台管理系统模板",
+        "description":"VUE后台管理系统模板",
+        "url": "http://vue.easydo.work/"
       }
     ]
   },
