@@ -136,10 +136,10 @@
           "url": "https://www.boost.org/"
       },
       {
-        "icon": "/icons/cpp-logo.png",
-        "title": "C标准库",
-        "description": "C 语言教程 - 网道",
-        "url": "https://wangdoc.com/clang/lib/wchar.h"
+          "icon": "/icons/cpp-logo.png",
+          "title": "C标准库",
+          "description": "C 语言教程 - 网道",
+          "url": "https://wangdoc.com/clang/lib/wchar.h"
       }
     ]
   },
@@ -303,10 +303,10 @@
           "url": "https://books.studygolang.com/The-Golang-Standard-Library-by-Example/"
       },
       {
-        "icon": "/icons/go.svg",
-        "title": "Go语言中文教程文档",
-        "description": "Go语言中文文档",
-        "url": "https://topgoer.com",
+          "icon": "/icons/go.svg",
+          "title": "Go语言中文教程文档",
+          "description": "Go语言中文文档",
+          "url": "https://topgoer.com",
       }
     ]
   },
