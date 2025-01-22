@@ -136,17 +136,16 @@
           "url": "https://www.boost.org/"
       },
       {
-<<<<<<< HEAD
           "icon": "/icons/c++insights.svg",
           "title": "cppinsights",
           "description": "C++ Insights",
           "url": "https://cppinsights.io/"
-=======
+      },
+      {
           "icon": "/icons/cpp-logo.png",
           "title": "C标准库",
           "description": "C 语言教程 - 网道",
           "url": "https://wangdoc.com/clang/lib/wchar.h"
->>>>>>> b0ba32ff3fe3c9dd8a18ac0e63bc3e3cf96fdd09
       }
     ]
   },
