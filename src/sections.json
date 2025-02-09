@@ -537,22 +537,28 @@
     "icon": "/icons/博主.svg",
     "items": [
         {
-            "icon": "https://subingwen.cn/images/logo.png",
+            "icon": "icons/subingwen.png",
             "title": "爱编程的大丙",
             "description": "爱编程的大丙 - 知识分享",
             "url": "https://subingwen.cn/"
         },
         {
-          "icon": "https://www.go-edu.cn/img/favicon.png",
+          "icon": "icons/go-edu.png",
           "title": "面向加薪学习",
           "description": "面向加薪学习",
           "url": "https://www.go-edu.cn/"
         },
         {
-          "icon":"https://bu.dusays.com/2024/03/26/6602e8690b3bb.ico",
+          "icon":"icons/fe32.ico",
           "title": "唐志远",
           "description": "唐志远",
           "url": "https://fe32.top/"
+        },
+        {
+          "icon":"/icons/mengbaoliang.ico",
+          "title": "C/C++ - 一亩三分地",
+          "description": "一亩三分地 - 专注于分享 Linux C/C++等方面的技术课程！",
+          "url":"https://mengbaoliang.cn"
         }
     ]
   }
