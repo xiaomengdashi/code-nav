@@ -146,6 +146,12 @@
           "title": "C标准库",
           "description": "C 语言教程 - 网道",
           "url": "https://wangdoc.com/clang/lib/wchar.h"
+      },
+      {
+          "icon": "/icons/cpp-logo.png",
+          "title": "The GNU C++ Library",
+          "description": "The GNU C++ Library",
+          "url": "https://gcc.gnu.org/onlinedocs/gcc-11.2.0/libstdc++/api/modules.html"
       }
     ]
   },
