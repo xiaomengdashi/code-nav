@@ -561,6 +561,12 @@
             "url": "https://subingwen.cn/"
         },
         {
+          "icon":"/icons/llfc.png",
+          "title": "恋恋风辰官方博客",
+          "description": "恋恋风辰官方博客",
+          "url": "https://llfc.club/"
+        },
+        {
           "icon": "icons/go-edu.png",
           "title": "面向加薪学习",
           "description": "面向加薪学习",
