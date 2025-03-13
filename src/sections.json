@@ -562,9 +562,9 @@
         },
         {
           "icon":"/icons/llfc.png",
-          "title": "恋恋风辰官方博客",
-          "description": "恋恋风辰官方博客",
-          "url": "https://llfc.club/"
+          "title": "恋恋风辰的编程笔记",
+          "description": "恋恋风辰的编程笔记",
+          "url": "https://gitbookcpp.llfc.club"
         },
         {
           "icon": "icons/go-edu.png",
