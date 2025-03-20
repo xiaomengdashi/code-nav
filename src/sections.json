@@ -136,6 +136,12 @@
           "url": "https://www.boost.org/"
       },
       {
+        "icon": "/icons/cppguide.jpg",
+        "title": "Cpp Guide 社区",
+        "description": "CppGuide社区",
+        "url": "https://cppguide.cn/"
+      },
+      {
           "icon": "/icons/c++insights.svg",
           "title": "cppinsights",
           "description": "C++ 源码分析工具",
