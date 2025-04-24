@@ -170,6 +170,36 @@
           "title": "Quick C++ Benchmarks",
           "description": "c++性能测试工具：google benchmark",
           "url": "https://quick-bench.com/"
+      },
+      {
+          "icon": "/icons/cover-2nd-logo.png",
+          "title": "现代 C++ 教程",
+          "description": "现代 C++ 教程: 高速上手 C++ 11/14/17/20",
+          "url": "https://changkun.de/modern-cpp/"
+      },
+      {
+          "icon": "/icons/gitbook.svg",
+          "title": "Effective C++",
+          "description": "Effective C++",
+          "url": "https://wizardforcel.gitbooks.io/effective-cpp/content/index.html"
+      },
+      {
+          "icon": "/icons/gitbook.svg",
+          "title": "Effective Modern C++",
+          "description": "Effective Modern C++",
+          "url": "https://cntransgroup.github.io/EffectiveModernCppChinese/Introduction.html"
+      },
+      {
+        "icon": "/icons/gitbook.svg",
+        "title": "Effective STL",
+        "description": "Effective STL",
+        "url": "https://zhuanlan.zhihu.com/p/458156007"
+      },
+      {
+          "icon": "/icons/gitbook.svg",
+          "title": "C++并发编程实战",
+          "description": "C++并发编程实战",
+          "url": "https://nj.gitbooks.io/c/content/"
       }
     ]
   },
