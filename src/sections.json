@@ -609,16 +609,46 @@
           "url": "https://www.go-edu.cn/"
         },
         {
-          "icon":"icons/fe32.ico",
-          "title": "唐志远",
-          "description": "唐志远",
-          "url": "https://fe32.top/"
+          "icon":"icons/20250421212153.png",
+          "title": "代码随想录",
+          "description": "代码随想录",
+          "url": "https://programmercarl.com/"
         },
         {
           "icon":"/icons/mengbaoliang.ico",
           "title": "C/C++ - 一亩三分地",
           "description": "一亩三分地 - 专注于分享 Linux C/C++等方面的技术课程！",
           "url":"https://mengbaoliang.cn"
+        },
+        {
+          "icon":"/icons/chengxumiaodaren.png",
+          "title": "C++ 编程指南",
+          "description": "C++ 编程指南",
+          "url": "https://chengxumiaodaren.com/"
+        },
+        {
+          "icon":"/icons/现代C++并发编程教程.png",
+          "title": "现代C++并发编程教程",
+          "description": "现代C++并发编程教程",
+          "url": "https://mq-b.github.io/ModernCpp-ConcurrentProgramming-Tutorial/"
+        },
+        {
+          "icon":"/icons/gitbook.svg",
+          "title": "高性能服务器开发",
+          "description": "高性能服务器开发 技术专栏",
+          "url": "https://balloonwj.github.io/cpp-guide-web/"
+        },
+        {
+          "icon":"/icons/labuladong.svg",
+          "title": "labuladong 的算法笔记",
+          "description": "labuladong 的算法笔记",
+          "url": "https://labuladong.online/algo/"
+        },
+        {
+          "icon":"/icons/emoji-book.png",
+          "title": "C++ interview",
+          "description": "C++ interview",
+          "url": "https://interview.huihut.com/"
         }
     ]
   }
