@@ -54,6 +54,72 @@
     ]
   },
   {
+    "title": "博客博主",
+    "icon": "/icons/博主.svg",
+    "items": [
+        {
+            "icon": "icons/subingwen.png",
+            "title": "爱编程的大丙",
+            "description": "爱编程的大丙 - 知识分享",
+            "url": "https://subingwen.cn/"
+        },
+        {
+          "icon":"/icons/llfc.png",
+          "title": "恋恋风辰的编程笔记",
+          "description": "恋恋风辰的编程笔记",
+          "url": "https://gitbookcpp.llfc.club"
+        },
+        {
+          "icon": "icons/go-edu.png",
+          "title": "面向加薪学习",
+          "description": "面向加薪学习",
+          "url": "https://www.go-edu.cn/"
+        },
+        {
+          "icon":"icons/20250421212153.png",
+          "title": "代码随想录",
+          "description": "代码随想录",
+          "url": "https://programmercarl.com/"
+        },
+        {
+          "icon":"/icons/mengbaoliang.ico",
+          "title": "C/C++ - 一亩三分地",
+          "description": "一亩三分地 - 专注于分享 Linux C/C++等方面的技术课程！",
+          "url":"https://mengbaoliang.cn"
+        },
+        {
+          "icon":"/icons/chengxumiaodaren.png",
+          "title": "C++ 编程指南",
+          "description": "C++ 编程指南",
+          "url": "https://chengxumiaodaren.com/"
+        },
+        {
+          "icon":"/icons/mq-b.png",
+          "title": "现代C++并发编程教程",
+          "description": "现代C++并发编程教程",
+          "url": "https://mq-b.github.io/ModernCpp-ConcurrentProgramming-Tutorial/"
+        },
+        {
+          "icon":"/icons/gitbook.svg",
+          "title": "高性能服务器开发",
+          "description": "高性能服务器开发 技术专栏",
+          "url": "https://balloonwj.github.io/cpp-guide-web/"
+        },
+        {
+          "icon":"/icons/labuladong.svg",
+          "title": "labuladong 的算法笔记",
+          "description": "labuladong 的算法笔记",
+          "url": "https://labuladong.online/algo/"
+        },
+        {
+          "icon":"/icons/emoji-book.png",
+          "title": "C++ interview",
+          "description": "C++ interview",
+          "url": "https://interview.huihut.com/"
+        }
+    ]
+  },
+  {
     "title": "编程社区",
     "icon": "/icons/开发社区.svg",
     "items": [
@@ -519,16 +585,10 @@
         "url": "https://semi.design/zh-CN"
       },
       {
-        "icon": "https://uilibhub.com/favicon.png",
-        "title": "UILibHub",
+        "icon": "/icons/ui-libs.svg",
+        "title": "ui-libs",
         "description": "Discover the best UI Library",
-        "url": "https://uilibhub.com/zh"
-      },
-      {
-        "icon": "https://ui-libs.com/favicon/palette.svg",
-        "title": "UI Lib Picker",
-        "description": "Pick the right UI Library",
-        "url": "https://ui-libs.com/"
+        "url": "https://ui-libs.vercel.app"
       },
       {
         "icon": "icons/layui.jpg",
@@ -596,72 +656,6 @@
         "description":"VUE后台管理系统模板",
         "url": "http://vue.easydo.work/"
       }
-    ]
-  },
-  {
-    "title": "博客博主",
-    "icon": "/icons/博主.svg",
-    "items": [
-        {
-            "icon": "icons/subingwen.png",
-            "title": "爱编程的大丙",
-            "description": "爱编程的大丙 - 知识分享",
-            "url": "https://subingwen.cn/"
-        },
-        {
-          "icon":"/icons/llfc.png",
-          "title": "恋恋风辰的编程笔记",
-          "description": "恋恋风辰的编程笔记",
-          "url": "https://gitbookcpp.llfc.club"
-        },
-        {
-          "icon": "icons/go-edu.png",
-          "title": "面向加薪学习",
-          "description": "面向加薪学习",
-          "url": "https://www.go-edu.cn/"
-        },
-        {
-          "icon":"icons/20250421212153.png",
-          "title": "代码随想录",
-          "description": "代码随想录",
-          "url": "https://programmercarl.com/"
-        },
-        {
-          "icon":"/icons/mengbaoliang.ico",
-          "title": "C/C++ - 一亩三分地",
-          "description": "一亩三分地 - 专注于分享 Linux C/C++等方面的技术课程！",
-          "url":"https://mengbaoliang.cn"
-        },
-        {
-          "icon":"/icons/chengxumiaodaren.png",
-          "title": "C++ 编程指南",
-          "description": "C++ 编程指南",
-          "url": "https://chengxumiaodaren.com/"
-        },
-        {
-          "icon":"/icons/mq-b.png",
-          "title": "现代C++并发编程教程",
-          "description": "现代C++并发编程教程",
-          "url": "https://mq-b.github.io/ModernCpp-ConcurrentProgramming-Tutorial/"
-        },
-        {
-          "icon":"/icons/gitbook.svg",
-          "title": "高性能服务器开发",
-          "description": "高性能服务器开发 技术专栏",
-          "url": "https://balloonwj.github.io/cpp-guide-web/"
-        },
-        {
-          "icon":"/icons/labuladong.svg",
-          "title": "labuladong 的算法笔记",
-          "description": "labuladong 的算法笔记",
-          "url": "https://labuladong.online/algo/"
-        },
-        {
-          "icon":"/icons/emoji-book.png",
-          "title": "C++ interview",
-          "description": "C++ interview",
-          "url": "https://interview.huihut.com/"
-        }
     ]
   }
 ] 
