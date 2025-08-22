@@ -18,7 +18,7 @@
     ]
   },
   {
-    "title": "导航网站",
+    "title": "AI导航",
     "icon": "/icons/网站导航icon.svg",
     "items": [
       {
@@ -44,6 +44,12 @@
           "title": "边界AI",
           "description": "边界AI - 智能AI对话、写作与画图生成工具的领先方案",
           "url": "https://ai1foo.com/"
+        },
+        {
+          "icon": "/icons/aibase.ico",
+          "title": "AIbase",
+          "description": "AIbase基地 - 让更多人看到未来 通往AGI之路",
+          "url": "https://www.aibase.com"
         }
     ]
   },

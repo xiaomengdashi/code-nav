@@ -63,7 +63,7 @@
       </div>
     </el-container>
     <el-footer class="footer">
-        © 2024 编程导航 | 所有权利保留
+        © 2024-2025 编程导航 | 所有权利保留
     </el-footer>
 
     <!-- 滑动到顶部图标 -->
