@@ -188,239 +188,330 @@
   {
     "title": "C/C++生态",
     "icon": "/icons/c++2.svg",
-    "items": [
+    "subsections": [
       {
-          "icon": "/icons/cpp-logo.png",
-          "title": "C++ 参考手册",
-          "description": "C 和 C++ 编程语言参考资料的在线资源",
-          "url": "https://zh.cppreference.com/"
+        "title": "参考文档",
+        "icon": "/icons/cpp-logo.png",
+        "items": [
+          {
+            "icon": "/icons/cpp-logo.png",
+            "title": "C++ 参考手册",
+            "description": "C 和 C++ 编程语言参考资料的在线资源",
+            "url": "https://zh.cppreference.com/"
+          },
+          {
+            "icon": "/icons/cpp-logo.png",
+            "title": "C语言|C++中文网",
+            "description": "C 和 C++ 编程语言的在线资源网站",
+            "url": "https://c-cpp.com/"
+          },
+          {
+            "icon": "/icons/cpp-logo.png",
+            "title": "C标准库",
+            "description": "C 语言教程 - 网道",
+            "url": "https://wangdoc.com/clang/lib/wchar.h"
+          },
+          {
+            "icon": "/icons/cpp-logo.png",
+            "title": "The GNU C++ Library",
+            "description": "The GNU C++ Library",
+            "url": "https://gcc.gnu.org/onlinedocs/gcc-11.2.0/libstdc++/api/modules.html"
+          }
+        ]
       },
       {
-          "icon": "/icons/cpp-logo.png",
-          "title": "C语言|C++中文网",
-          "description": "C 和 C++ 编程语言的在线资源网站",
-          "url": "https://c-cpp.com/"
+        "title": "开发工具",
+        "icon": "/icons/c++insights.svg",
+        "items": [
+          {
+            "icon": "/icons/C++2.png",
+            "title": "C++ 在线运行",
+            "description": "C++在线运行，C++在线编译",
+            "url": "https://jsrun.net/cpp/new"
+          },
+          {
+            "icon": "/icons/c++insights.svg",
+            "title": "cppinsights",
+            "description": "C++ 源码分析工具",
+            "url": "https://cppinsights.io/"
+          },
+          {
+            "icon": "/icons/Compiler.ico",
+            "title": "Compiler Explorer",
+            "description": "C++ 汇编代码查看",
+            "url": "https://godbolt.org/"
+          },
+          {
+            "icon": "/icons/C++benchmark.png",
+            "title": "Quick C++ Benchmarks",
+            "description": "c++性能测试工具：google benchmark",
+            "url": "https://quick-bench.com/"
+          }
+        ]
       },
       {
-          "icon": "/icons/cpp-logo.png",
-          "title": "Boost",
-          "description": "Boost 库被广泛认为是世界上设计最精良的 C++ 库项目之一",
-          "url": "https://www.boost.org/"
+        "title": "库与框架",
+        "icon": "/icons/cpp-logo.png",
+        "items": [
+          {
+            "icon": "/icons/cpp-logo.png",
+            "title": "Boost",
+            "description": "Boost 库被广泛认为是世界上设计最精良的 C++ 库项目之一",
+            "url": "https://www.boost.org/"
+          }
+        ]
       },
       {
-          "icon": "/icons/C++2.png",
-          "title": "C++ 在线运行",
-          "description": "C++在线运行，C++在线编译",
-          "url": "https://jsrun.net/cpp/new"
+        "title": "学习教程",
+        "icon": "/icons/cover-2nd-logo.png",
+        "items": [
+          {
+            "icon": "/icons/cover-2nd-logo.png",
+            "title": "现代 C++ 教程",
+            "description": "现代 C++ 教程: 高速上手 C++ 11/14/17/20",
+            "url": "https://changkun.de/modern-cpp/"
+          },
+          {
+            "icon": "/icons/cppguide.jpg",
+            "title": "Cpp Guide 社区",
+            "description": "CppGuide社区",
+            "url": "https://cppguide.cn/"
+          },
+          {
+            "icon": "/icons/cppstories.ico",
+            "title": "C++ Stories",
+            "description": "深入探讨现代C++编程技术和最佳实践的技术博客",
+            "url": "https://www.cppstories.com/"
+          },
+          {
+            "icon": "/icons/hacking.svg",
+            "title": "Hacking C++",
+            "description": "现代C++编程指南、技巧和最佳实践",
+            "url": "https://hackingcpp.com/"
+          }
+        ]
       },
       {
-          "icon": "/icons/c++insights.svg",
-          "title": "cppinsights",
-          "description": "C++ 源码分析工具",
-          "url": "https://cppinsights.io/"
-      },
-      {
-          "icon": "/icons/Compiler.ico",
-          "title": "Compiler Explorer",
-          "description": "C++ 汇编代码查看",
-          "url": "https://godbolt.org/"
-      },
-      {
-          "icon": "/icons/C++benchmark.png",
-          "title": "Quick C++ Benchmarks",
-          "description": "c++性能测试工具：google benchmark",
-          "url": "https://quick-bench.com/"
-      },
-      {
-          "icon": "/icons/cpp-logo.png",
-          "title": "C标准库",
-          "description": "C 语言教程 - 网道",
-          "url": "https://wangdoc.com/clang/lib/wchar.h"
-      },
-      {
-          "icon": "/icons/cpp-logo.png",
-          "title": "The GNU C++ Library",
-          "description": "The GNU C++ Library",
-          "url": "https://gcc.gnu.org/onlinedocs/gcc-11.2.0/libstdc++/api/modules.html"
-      },
-      {
-          "icon": "/icons/cover-2nd-logo.png",
-          "title": "现代 C++ 教程",
-          "description": "现代 C++ 教程: 高速上手 C++ 11/14/17/20",
-          "url": "https://changkun.de/modern-cpp/"
-      },
-      {
-          "icon": "/icons/cppguide.jpg",
-          "title": "Cpp Guide 社区",
-          "description": "CppGuide社区",
-          "url": "https://cppguide.cn/"
-      },
-      {
-          "icon": "/icons/gitbook.svg",
-          "title": "Effective C++",
-          "description": "Effective C++",
-          "url": "https://wizardforcel.gitbooks.io/effective-cpp/content/index.html"
-      },
-      {
-          "icon": "/icons/gitbook.svg",
-          "title": "Effective Modern C++",
-          "description": "Effective Modern C++",
-          "url": "https://cntransgroup.github.io/EffectiveModernCppChinese/Introduction.html"
-      },
-      {
+        "title": "经典书籍",
         "icon": "/icons/gitbook.svg",
-        "title": "Effective STL",
-        "description": "Effective STL",
-        "url": "https://zhuanlan.zhihu.com/p/458156007"
-      },
-      {
-          "icon": "/icons/gitbook.svg",
-          "title": "C++并发编程实战",
-          "description": "C++并发编程实战",
-          "url": "https://nj.gitbooks.io/c/content/"
+        "items": [
+          {
+            "icon": "/icons/gitbook.svg",
+            "title": "Effective C++",
+            "description": "Effective C++",
+            "url": "https://wizardforcel.gitbooks.io/effective-cpp/content/index.html"
+          },
+          {
+            "icon": "/icons/gitbook.svg",
+            "title": "Effective Modern C++",
+            "description": "Effective Modern C++",
+            "url": "https://cntransgroup.github.io/EffectiveModernCppChinese/Introduction.html"
+          },
+          {
+            "icon": "/icons/gitbook.svg",
+            "title": "Effective STL",
+            "description": "Effective STL",
+            "url": "https://zhuanlan.zhihu.com/p/458156007"
+          },
+          {
+            "icon": "/icons/gitbook.svg",
+            "title": "C++并发编程实战",
+            "description": "C++并发编程实战",
+            "url": "https://nj.gitbooks.io/c/content/"
+          }
+        ]
       }
     ]
   },
   {
     "title": "Rust生态",
     "icon": "/icons/Rust-icon.svg",
-    "items": [
+    "subsections": [
       {
-          "icon": "/icons/rust.svg",
-          "title": "Rust 官网",
-          "description": "Rust 程序设计语言",
-          "url": "https://www.rust-lang.org/zh-CN/"
-      },
-      {
+        "title": "官方文档",
         "icon": "/icons/rust.svg",
-        "title": "Rust语言圣经(Rust Course)",
-        "description": "Rust圣经",
-        "url": "https://course.rs/about-book.html"
+        "items": [
+          {
+            "icon": "/icons/rust.svg",
+            "title": "Rust 官网",
+            "description": "Rust 程序设计语言",
+            "url": "https://www.rust-lang.org/zh-CN/"
+          },
+          {
+            "icon": "/icons/rust.svg",
+            "title": "Rust 标准库",
+            "description": "Rust 标准库文档中文版",
+            "url": "https://rustwiki.org/zh-CN/std/index.html"
+          },
+          {
+            "icon": "/icons/docs-rs.png",
+            "title": "Docs.rs",
+            "description": "Rust 编程语言提供文档托管服务的网站",
+            "url": "https://docs.rs/"
+          }
+        ]
       },
       {
-          "icon": "/icons/rust.svg",
-          "title": "Rust语言圣经",
-          "description": "Rust圣经",
-          "url": "https://buwu-dwj.github.io/book/html/rust/rust_holy/pre.html"
+        "title": "包管理",
+        "icon": "/icons/cargo.png",
+        "items": [
+          {
+            "icon": "/icons/cargo.png",
+            "title": "crates.io",
+            "description": "Rust 编程语言的官方包管理器网站",
+            "url": "https://crates.io/"
+          },
+          {
+            "icon": "/icons/cargo.png",
+            "title": "Rust 包仓库",
+            "description": "Lib.rs — Rust 包的家园",
+            "url": "https://crates.org.cn/"
+          },
+          {
+            "icon": "/icons/cargo.png",
+            "title": "Cargo 手册 中文版",
+            "description": "Rust 的包管理器 Cargo 的中文指南",
+            "url": "https://rustwiki.org/zh-CN/cargo/index.html"
+          }
+        ]
       },
       {
-          "icon": "/icons/cargo.png",
-          "title": "Rust 包仓库",
-          "description": "Lib.rs — Rust 包的家园",
-          "url": "https://crates.org.cn/"
-      },
-      {
-          "icon": "/icons/rust.svg",
-          "title": "Rust 标准库",
-          "description": "Rust 标准库文档中文版",
-          "url": "https://rustwiki.org/zh-CN/std/index.html"
-      },
-      {
-          "icon": "/icons/rust.svg",
-          "title": "Rust语言中文社区",
-          "description": "Rust语言中文社区",
-          "url": "https://rustcc.cn/"
-      },
-      {
-          "icon": "/icons/docs-rs.png",
-          "title": "Docs.rs",
-          "description": "Rust 编程语言提供文档托管服务的网站",
-          "url": "https://docs.rs/"
-      },
-      {
-          "icon": "/icons/cargo.png",
-          "title": "crates.io",
-          "description": "Rust 编程语言的官方包管理器网站",
-          "url": "https://crates.io/"
-      },
-      {
-          "icon": "/icons/cargo.png",
-          "title": "Cargo 手册 中文版",
-          "description": "Rust 的包管理器 Cargo 的中文指南",
-          "url": "https://rustwiki.org/zh-CN/cargo/index.html"
-      },
-      {
-          "icon": "/icons/rust.svg",
-          "title": "Rust在线",
-          "description": "在线的 Rust 代码编辑器和运行环境",
-          "url": "https://play.rust-lang.org/?version=stable&mode=debug&edition=2021"
-      },
-      {
-        "icon": "/icons/Actix Web.png",
-        "title": "Actix Web",
-        "description": "a powerful,pragmatic,and extremely fast web framework",
-        "url": "https://actix.rs/"
-      },
-      {
-        "icon": "/icons/Actix Web.png",
-        "title": "Actix",
-        "description": "一个功能强大、实用、极速的 Rust Web 框架",
-        "url": "https://tech-cn.github.io/actix-website/"
-      },
-      {
+        "title": "开发工具",
         "icon": "/icons/rust.svg",
-        "title": "Serde",
-        "description": "Serde 教程",
-        "url": "https://serde-zh.netlify.app/"
+        "items": [
+          {
+            "icon": "/icons/rust.svg",
+            "title": "Rust在线",
+            "description": "在线的 Rust 代码编辑器和运行环境",
+            "url": "https://play.rust-lang.org/?version=stable&mode=debug&edition=2021"
+          }
+        ]
       },
       {
+        "title": "Web框架",
+        "icon": "/icons/Actix Web.png",
+        "items": [
+          {
+            "icon": "/icons/Actix Web.png",
+            "title": "Actix Web",
+            "description": "a powerful,pragmatic,and extremely fast web framework",
+            "url": "https://actix.rs/"
+          },
+          {
+            "icon": "/icons/Actix Web.png",
+            "title": "Actix",
+            "description": "一个功能强大、实用、极速的 Rust Web 框架",
+            "url": "https://tech-cn.github.io/actix-website/"
+          }
+        ]
+      },
+      {
+        "title": "常用库",
+        "icon": "/icons/rust.svg",
+        "items": [
+          {
+            "icon": "/icons/rust.svg",
+            "title": "Serde",
+            "description": "Serde 教程",
+            "url": "https://serde-zh.netlify.app/"
+          },
+          {
+            "icon":"/icons/async-std.png",
+            "title":"async-std",
+            "description": "Async version of the Rust standard library",
+            "url": "https://async.rs/"
+          },
+          {
+            "icon":"/icons/tokio.jpg",
+            "title": "tokio",
+            "description":"A runtime for writing reliable asynchronous applications",
+            "url": "https://tokio.rs/"
+          }
+        ]
+      },
+      {
+        "title": "学习教程",
         "icon": "/icons/gitbook.svg",
-        "title": "Rust入门秘籍",
-        "description": "一本Rust的入门书籍",
-        "url": "https://rust-book.junmajinlong.com/"
+        "items": [
+          {
+            "icon": "/icons/rust.svg",
+            "title": "Rust语言圣经(Rust Course)",
+            "description": "Rust圣经",
+            "url": "https://course.rs/about-book.html"
+          },
+          {
+            "icon": "/icons/rust.svg",
+            "title": "Rust语言圣经",
+            "description": "Rust圣经",
+            "url": "https://buwu-dwj.github.io/book/html/rust/rust_holy/pre.html"
+          },
+          {
+            "icon": "/icons/gitbook.svg",
+            "title": "Rust 程序设计语言 中文版",
+            "description": "Rust 程序设计语言 中文版",
+            "url": "https://rustwiki.org/zh-CN/book/"
+          },
+          {
+            "icon": "/icons/gitbook.svg",
+            "title": "通过例子学 Rust",
+            "description": "通过例子学 Rust 中文版",
+            "url": "https://rustwiki.org/zh-CN/rust-by-example/"
+          },
+          {
+            "icon": "/icons/gitbook.svg",
+            "title": "Rust入门秘籍",
+            "description": "一本Rust的入门书籍",
+            "url": "https://rust-book.junmajinlong.com/"
+          },
+          {
+            "icon": "/icons/tutorialspoint.png",
+            "title": "Rust Tutorial",
+            "description": "Rust Tutorial",
+            "url": "https://www.tutorialspoint.com/rust/index.htm"
+          }
+        ]
       },
       {
+        "title": "进阶读物",
         "icon": "/icons/gitbook.svg",
-        "title": "通过例子学 Rust",
-        "description": "通过例子学 Rust 中文版",
-        "url": "https://rustwiki.org/zh-CN/rust-by-example/"
+        "items": [
+          {
+            "icon": "/icons/gitbook.svg",
+            "title": "Rust 烹饪书",
+            "description": "快速了解 Rust crate(箱子) 生态系统的能力",
+            "url": "https://llever.com/rust-cookbook-zh/intro.zh.html"
+          },
+          {
+            "icon": "/icons/gitbook.svg",
+            "title": "Effective Rust 中文版",
+            "description": "Effective Rust 中文版",
+            "url": "https://rustx-labs.github.io/effective-rust-cn/intro_zh.html"
+          },
+          {
+            "icon": "/icons/gitbook.svg",
+            "title": "Rusty Book(锈书)",
+            "description": "Rusty 日常开发常用库",
+            "url": "https://rusty.course.rs/"
+          },
+          {
+            "icon": "/icons/gitbook.svg",
+            "title": "Rust 实践指南",
+            "description": "Rust 实践指南",
+            "url": "https://rust-guide.irust.net/zh-cn/index.html"
+          }
+        ]
       },
       {
-        "icon": "/icons/gitbook.svg",
-        "title": "Rust 烹饪书",
-        "description": "快速了解 Rust crate(箱子) 生态系统的能力",
-        "url": "https://llever.com/rust-cookbook-zh/intro.zh.html"
-      },
-      {
-        "icon": "/icons/gitbook.svg",
-        "title": "Rust 程序设计语言 中文版",
-        "description": "Rust 程序设计语言 中文版",
-        "url": "https://rustwiki.org/zh-CN/book/"
-      },
-      {
-        "icon": "/icons/gitbook.svg",
-        "title": "Effective Rust 中文版",
-        "description": "Effective Rust 中文版",
-        "url": "https://rustx-labs.github.io/effective-rust-cn/intro_zh.html"
-      },
-      {
-        "icon": "/icons/gitbook.svg",
-        "title": "Rusty Book(锈书)",
-        "description": "Rusty 日常开发常用库",
-        "url": "https://rusty.course.rs/"
-      },{
-        "icon": "/icons/gitbook.svg",
-        "title": "Rust 实践指南",
-        "description": "Rust 实践指南",
-        "url": "https://rust-guide.irust.net/zh-cn/index.html"
-      },
-      {
-        "icon": "/icons/tutorialspoint.png",
-        "title": "Rust Tutorial",
-        "description": "Rust Tutorial",
-        "url": "https://www.tutorialspoint.com/rust/index.htm"
-      },
-      {
-        "icon":"/icons/async-std.png",
-        "title":"async-std",
-        "description": "Async version of the Rust standard library",
-        "url": "https://async.rs/"
-      },
-      {
-        "icon":"/icons/tokio.jpg",
-        "title": "tokio",
-        "description":"A runtime for writing reliable asynchronous applications",
-        "url": "https://tokio.rs/"
+        "title": "社区资源",
+        "icon": "/icons/rust.svg",
+        "items": [
+          {
+            "icon": "/icons/rust.svg",
+            "title": "Rust语言中文社区",
+            "description": "Rust语言中文社区",
+            "url": "https://rustcc.cn/"
+          }
+        ]
       }
     ]
   },
@@ -481,180 +572,210 @@
   {
     "title": "前端常用",
     "icon": "/icons/前端.svg",
-    "items": [
+    "subsections": [
       {
-        "icon": "/icons/vuejs.svg",
-        "title": "Vue",
-        "description": "渐进式 JavaScript 框架",
-        "url": "https://cn.vuejs.org/"
-      }, 
-      {
-        "icon": "/icons/react.svg",
-        "title": "React",
-        "description": "用于构建用户界面的 JavaScript 库",
-        "url": "https://zh-hans.react.dev/"
+        "title": "前端框架",
+        "icon": "/icons/前端.svg",
+        "items": [
+          {
+            "icon": "/icons/vuejs.svg",
+            "title": "Vue",
+            "description": "渐进式 JavaScript 框架",
+            "url": "https://cn.vuejs.org/"
+          }, 
+          {
+            "icon": "/icons/react.svg",
+            "title": "React",
+            "description": "用于构建用户界面的 JavaScript 库",
+            "url": "https://zh-hans.react.dev/"
+          },
+          {
+            "icon": "/icons/angular.png",
+            "title": "Angular",
+            "description": "Angular 是一个 Web 框架，能够帮助开发者构建快速、可靠的应用。",
+            "url": "https://angular.cn/"
+          }
+        ]
       },
       {
-        "icon": "/icons/angular.png",
-        "title": "Angular",
-        "description": "Angular 是一个 Web 框架，能够帮助开发者构建快速、可靠的应用。",
-        "url": "https://angular.cn/"
+        "title": "Vue生态",
+        "icon": "/icons/Vue.svg",
+        "items": [
+          {
+            "icon": "/icons/vue3js.png",
+            "title": "Vue3 One Piece",
+            "description": "vue3中文, vue3js文档, vue3资料",
+            "url": "https://vue3js.cn/"
+          },
+          {
+            "icon": "https://pinia.vuejs.org/logo.svg",
+            "title": "Pinia",
+            "description": "符合直觉的 Vue.js 状态管理库",
+            "url": "https://pinia.vuejs.org/zh/"
+          },
+          {
+            "icon": "https://router.vuejs.org/logo.svg",
+            "title": "Vue Router",
+            "description": "Vue.js 的官方路由库",
+            "url": "https://router.vuejs.org/zh/"
+          },
+          {
+            "icon": "icons/Nuxt.png",
+            "title": "Nuxt",
+            "description": "直观的Vue 框架",
+            "url": "https://nuxtjs.org.cn/"
+          },
+          {
+            "icon": "/icons/vuejs.svg",
+            "title": "Vue-ECharts",
+            "description": "Vue.js component for Apache ECharts™. (docs)",
+            "url": "https://vue-echarts.dev/"
+          },
+          {
+            "icon": "/icons/vue-grid-layout.png",
+            "title": "Vue Grid Layout",
+            "description": "一个类似于Gridster的栅格布局系统, 适用于Vue.js",
+            "url": "https://jbaysolutions.github.io/vue-grid-layout/zh/"
+          },
+          {
+            "icon": "https://yue1123.github.io/vue3-baidu-map-gl/logo.svg",
+            "title": "Vue3 Baidu Map Gl",
+            "description": "Vue3 & BMapGL 组件库 + hooks 库",
+            "url": "https://yue1123.github.io/vue3-baidu-map-gl/"
+          },
+          {
+            "icon":"/icons/vuejs.svg",
+            "title":"VUE后台管理系统模板",
+            "description":"VUE后台管理系统模板",
+            "url": "http://vue.easydo.work/"
+          }
+        ]
       },
       {
-        "icon": "https://echarts.apache.org/zh/images/favicon.png?_v_=20240226",
-        "title": "Apache ECharts",
-        "description": "一个基于 JavaScript 的开源可视化图表库",
-        "url": "https://echarts.apache.org/zh/index.html"
-      },
-      {
-        "icon": "https://mtruning.club/logo-with-shadow.png",
-        "title": "GoView",
-        "description": "低代码数据可视化",
-        "url": "https://mtruning.club/"
-      },
-      {
-        "icon": "/icons/tailwindcss.svg",
-        "title": "Tailwind CSS",
-        "description": "功能类优先的 CSS 框架",
-        "url": "https://tailwindcss.com"
-      },
-      {
-        "icon": "/icons/npm.ico",
-        "title": "npm 仓库",
-        "description": "npm.io",
-        "url": "https://npm.io/"
-      }
-    ]
-  },
-  {
-    "title": "UI框架",
-    "icon": "/icons/8_2UI设计.svg",
-    "items": [
-      {
+        "title": "Vue UI组件库",
         "icon": "/icons/element-plus.svg",
-        "title": "Element Plus",
-        "description": "基于 Vue 3，面向设计师和开发者的组件库。",
-        "url": "https://element-plus.org"
+        "items": [
+          {
+            "icon": "/icons/element-plus.svg",
+            "title": "Element Plus",
+            "description": "基于 Vue 3，面向设计师和开发者的组件库。",
+            "url": "https://element-plus.org"
+          },
+          {
+            "icon": "/icons/Naive-UI.svg",
+            "title": "Naive UI",
+            "description": "基于 Vue 3，面向设计师和开发者的组件库。",
+            "url": "https://www.naiveui.com/zh-CN/os-theme"
+          },
+          {
+            "icon": "/icons/ant-design-vue.svg",
+            "title": "Ant Design Vue",
+            "description": "Ant Design 的 Vue 实现，开发和服务于企业级后台产品。",
+            "url": "https://www.antdv.com/docs/vue/introduce-cn/"
+          },
+          {
+            "icon": "https://cdn.vuetifyjs.com/docs/images/logos/vuetify-logo-light-atom.svg",
+            "title": "Vuetify",
+            "description": "一个纯手工精心打造的 Material 样式的 Vue UI 组件库。",
+            "url": "https://vuetifyjs.com/zh-Hans/"
+          },
+          {
+            "icon": "https://cdn.quasar.dev/logo-v2/svg/logo-dark.svg",
+            "title": "Quasar",
+            "description": "较成熟的组件库，大名鼎鼎，组件丰富到变态。",
+            "url": "https://quasar.dev/"
+          },
+          {
+            "icon": "/icons/vue-material.jpg",
+            "title": "Vue Material",
+            "description": "一个轻量级的框架， 建立在谷歌的 Material Design 基础上",
+            "url": "https://vuematerial.materializecss.cn"
+          },
+          {
+            "icon": "icons/layui.jpg",
+            "title": "layui - vue",
+            "description": "一 套 Vue 3.0 的 桌 面 端 组 件 库.",
+            "url": "https://www.layui-vue.com/zh-CN/index"
+          }
+        ]
       },
       {
-        "icon": "/icons/Naive-UI.svg",
-        "title": "Naive UI",
-        "description": "基于 Vue 3，面向设计师和开发者的组件库。",
-        "url": "https://www.naiveui.com/zh-CN/os-theme"
-      },
-      {
+        "title": "React UI组件库",
         "icon": "/icons/ant-design.svg",
-        "title": "Ant Design",
-        "description": "蚂蚁金服的开箱即用的中台前端/设计解决方案。",
-        "url": "https://ant.design"
+        "items": [
+          {
+            "icon": "/icons/ant-design.svg",
+            "title": "Ant Design",
+            "description": "蚂蚁金服的开箱即用的中台前端/设计解决方案。",
+            "url": "https://ant.design"
+          },
+          {
+            "icon": "/icons/material-ui.svg",
+            "title": "Material UI",
+            "description": "一组反应元件，实现谷歌的材料设计。",
+            "url": "https://mui.com/material-ui/"
+          },
+          {
+            "icon": "https://lf9-static.semi.design/obj/semi-tos/images/favicon.ico",
+            "title": "Semi Design",
+            "description": "连接设计师与开发者",
+            "url": "https://semi.design/zh-CN"
+          },
+          {
+            "icon":"/icons/devui.png",
+            "title":"DevUI Design",
+            "description":"面向企业中后台产品的开源前端解决方案",
+            "url": "https://devui.design/home"
+          }
+        ]
       },
       {
-        "icon": "/icons/ant-design-vue.svg",
-        "title": "Ant Design Vue",
-        "description": "Ant Design 的 Vue 实现，开发和服务于企业级后台产品。",
-        "url": "https://www.antdv.com/docs/vue/introduce-cn/"
-      },
-      {
-        "icon": "https://cdn.vuetifyjs.com/docs/images/logos/vuetify-logo-light-atom.svg",
-        "title": "Vuetify",
-        "description": "一个纯手工精心打造的 Material 样式的 Vue UI 组件库。",
-        "url": "https://vuetifyjs.com/zh-Hans/"
-      },
-      {
-        "icon": "https://cdn.quasar.dev/logo-v2/svg/logo-dark.svg",
-        "title": "Quasar",
-        "description": "较成熟的组件库，大名鼎鼎，组件丰富到变态。",
-        "url": "https://quasar.dev/"
-      },
-      {
-        "icon": "/icons/material-ui.svg",
-        "title": "Material UI",
-        "description": "一组反应元件，实现谷歌的材料设计。",
-        "url": "https://mui.com/material-ui/"
-      },
-      {
-        "icon": "/icons/vue-material.jpg",
-        "title": "Vue Material",
-        "description": "一个轻量级的框架， 建立在谷歌的 Material Design 基础上",
-        "url": "https://vuematerial.materializecss.cn"
-      },
-      {
-        "icon": "https://lf9-static.semi.design/obj/semi-tos/images/favicon.ico",
-        "title": "Semi Design",
-        "description": "连接设计师与开发者",
-        "url": "https://semi.design/zh-CN"
-      },
-      {
+        "title": "UI资源导航",
         "icon": "/icons/ui-libs.svg",
-        "title": "ui-libs",
-        "description": "Discover the best UI Library",
-        "url": "https://ui-libs.vercel.app"
+        "items": [
+          {
+            "icon": "/icons/ui-libs.svg",
+            "title": "UI Lib Picker",
+            "description": "Pick the right UI Library",
+            "url": "https://ui-libs.vercel.app/"
+          }
+        ]
       },
       {
-        "icon": "icons/layui.jpg",
-        "title": "layui - vue",
-        "description": "一 套 Vue 3.0 的 桌 面 端 组 件 库.",
-        "url": "https://www.layui-vue.com/zh-CN/index"
+        "title": "可视化图表",
+        "icon": "/icons/前端.svg",
+        "items": [
+          {
+            "icon": "https://echarts.apache.org/zh/images/favicon.png?_v_=20240226",
+            "title": "Apache ECharts",
+            "description": "一个基于 JavaScript 的开源可视化图表库",
+            "url": "https://echarts.apache.org/zh/index.html"
+          },
+          {
+            "icon": "https://mtruning.club/logo-with-shadow.png",
+            "title": "GoView",
+            "description": "低代码数据可视化",
+            "url": "https://mtruning.club/"
+          }
+        ]
       },
       {
-        "icon":"/icons/devui.png",
-        "title":"DevUI Design",
-        "description":"面向企业中后台产品的开源前端解决方案",
-        "url": "https://devui.design/home"
-      }
-    ]
-  },
-  {
-    "title": "Vue生态",
-    "icon": "/icons/Vue.svg",
-    "items": [
-      {
-        "icon": "/icons/vue3js.png",
-        "title": "Vue3 One Piece",
-        "description": "vue3中文, vue3js文档, vue3资料",
-        "url": "https://vue3js.cn/"
-      },
-      {
-        "icon": "https://pinia.vuejs.org/logo.svg",
-        "title": "Pinia",
-        "description": "符合直觉的 Vue.js 状态管理库",
-        "url": "https://pinia.vuejs.org/zh/"
-      },
-      {
-        "icon": "https://router.vuejs.org/logo.svg",
-        "title": "Vue Router",
-        "description": "Vue.js 的官方路由库",
-        "url": "https://router.vuejs.org/zh/"
-      },
-      {
-        "icon": "icons/Nuxt.png",
-        "title": "Nuxt",
-        "description": "直观的Vue 框架",
-        "url": "https://nuxtjs.org.cn/"
-      },
-      {
-        "icon": "/icons/vuejs.svg",
-        "title": "Vue-ECharts",
-        "description": "Vue.js component for Apache ECharts™. (docs)",
-        "url": "https://vue-echarts.dev/"
-      },
-      {
-        "icon": "/icons/vue-grid-layout.png",
-        "title": "Vue Grid Layout",
-        "description": "一个类似于Gridster的栅格布局系统, 适用于Vue.js",
-        "url": "https://jbaysolutions.github.io/vue-grid-layout/zh/"
-      },
-      {
-        "icon": "https://yue1123.github.io/vue3-baidu-map-gl/logo.svg",
-        "title": "Vue3 Baidu Map Gl",
-        "description": "Vue3 & BMapGL 组件库 + hooks 库",
-        "url": "https://yue1123.github.io/vue3-baidu-map-gl/"
-      },
-      {
-        "icon":"/icons/vuejs.svg",
-        "title":"VUE后台管理系统模板",
-        "description":"VUE后台管理系统模板",
-        "url": "http://vue.easydo.work/"
+        "title": "样式工具",
+        "icon": "/icons/前端.svg",
+        "items": [
+          {
+            "icon": "/icons/tailwindcss.svg",
+            "title": "Tailwind CSS",
+            "description": "功能类优先的 CSS 框架",
+            "url": "https://tailwindcss.com"
+          },
+          {
+            "icon": "/icons/npm.ico",
+            "title": "npm 仓库",
+            "description": "npm.io",
+            "url": "https://npm.io/"
+          }
+        ]
       }
     ]
   }

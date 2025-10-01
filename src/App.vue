@@ -15,18 +15,41 @@
         background-color="#333"
         text-color="#fff"
         active-text-color="#409EFF"
+        :collapse="isCollapsed"
+        :unique-opened="false"
       >
-        <el-menu-item 
-          v-for="(section, index) in sections" 
-          :key="index" 
-          :index="String(index + 1)"
-          @click="scrollToSection(index)"
-        >
-          <a :href="`#section-${index + 1}`">
+        <template v-for="(section, index) in sections" :key="index">
+          <!-- 如果有子分类，显示为子菜单 -->
+          <el-sub-menu 
+            v-if="section.subsections && section.subsections.length > 0"
+            :index="String(index + 1)"
+          >
+            <template #title>
+              <img :src="section.icon" alt="icon" class="custom-icon" />
+              <span>{{ section.title }}</span>
+            </template>
+            <!-- 子分类菜单项 -->
+            <el-menu-item 
+              v-for="(subsection, subIndex) in section.subsections"
+              :key="`${index}-${subIndex}`"
+              :index="`${index + 1}-${subIndex + 1}`"
+              @click="scrollToSubsection(index, subIndex)"
+            >
+              <img :src="subsection.icon" alt="icon" class="custom-icon" />
+              <span>{{ subsection.title }}</span>
+            </el-menu-item>
+          </el-sub-menu>
+          
+          <!-- 如果没有子分类，显示为普通菜单项 -->
+          <el-menu-item 
+            v-else
+            :index="String(index + 1)"
+            @click="scrollToSection(index)"
+          >
             <img :src="section.icon" alt="icon" class="custom-icon" />
-            <span v-if="!isCollapsed">{{ section.title }}</span>
-          </a>
-        </el-menu-item>
+            <span>{{ section.title }}</span>
+          </el-menu-item>
+        </template>
       </el-menu>
     </el-aside>
 
@@ -38,28 +61,65 @@
         :key="sIndex"
         :id="`section-${sIndex + 1}`"
       >
-        <h2 class="section-title">{{ section.title }}</h2>
-        <el-row :gutter="20">
-          <el-col 
-            :span="isMobile ? 12 : 6" 
-            v-for="(item, index) in section.items" 
-            :key="index"
+        <!-- 如果有子分类，显示子分类 -->
+        <template v-if="section.subsections && section.subsections.length > 0">
+          <h2 class="section-title">{{ section.title }}</h2>
+          <div 
+            v-for="(subsection, subIndex) in section.subsections"
+            :key="subIndex"
+            :id="`subsection-${sIndex + 1}-${subIndex + 1}`"
+            class="subsection"
           >
-            <el-card 
-              shadow="hover" 
-              class="nav-card"
-              @click="openLink(item.url)"
+            <h3 class="subsection-title">{{ subsection.title }}</h3>
+            <el-row :gutter="20">
+              <el-col 
+                :span="isMobile ? 12 : 6" 
+                v-for="(item, index) in subsection.items" 
+                :key="index"
+              >
+                <el-card 
+                  shadow="hover" 
+                  class="nav-card"
+                  @click="openLink(item.url)"
+                >
+                  <div class="nav-card-content">
+                    <img :src="item.icon" class="nav-icon" />
+                    <div class="nav-info">
+                      <h3>{{ item.title }}</h3>
+                      <p v-if="!isMobile">{{ item.description }}</p>
+                    </div>
+                  </div>
+                </el-card>
+              </el-col>
+            </el-row>
+          </div>
+        </template>
+        
+        <!-- 如果没有子分类，显示原来的内容 -->
+        <template v-else>
+          <h2 class="section-title">{{ section.title }}</h2>
+          <el-row :gutter="20">
+            <el-col 
+              :span="isMobile ? 12 : 6" 
+              v-for="(item, index) in section.items" 
+              :key="index"
             >
-              <div class="nav-card-content">
-                <img :src="item.icon" class="nav-icon" />
-                <div class="nav-info">
-                  <h3>{{ item.title }}</h3>
-                  <p v-if="!isMobile">{{ item.description }}</p>
+              <el-card 
+                shadow="hover" 
+                class="nav-card"
+                @click="openLink(item.url)"
+              >
+                <div class="nav-card-content">
+                  <img :src="item.icon" class="nav-icon" />
+                  <div class="nav-info">
+                    <h3>{{ item.title }}</h3>
+                    <p v-if="!isMobile">{{ item.description }}</p>
+                  </div>
                 </div>
-              </div>
-            </el-card>
-          </el-col>
-        </el-row>
+              </el-card>
+            </el-col>
+          </el-row>
+        </template>
       </div>
     </el-container>
     <el-footer class="footer">
@@ -90,6 +150,11 @@ const openLink = (url) => {
 const scrollToSection = (index) => {
   const section = document.getElementById(`section-${index + 1}`);
   section?.scrollIntoView({ behavior: 'smooth' });
+}
+
+const scrollToSubsection = (sectionIndex, subsectionIndex) => {
+  const subsection = document.getElementById(`subsection-${sectionIndex + 1}-${subsectionIndex + 1}`);
+  subsection?.scrollIntoView({ behavior: 'smooth' });
 }
 
 const scrollToTop = () => {
@@ -214,6 +279,20 @@ onUnmounted(() => {
   margin-bottom: 20px;
   padding-left: 10px;
   border-left: 4px solid #409EFF;
+}
+
+.subsection {
+  margin-bottom: 25px;
+  padding-left: 15px;
+}
+
+.subsection-title {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: #606266;
+  padding-left: 8px;
+  border-left: 3px solid #67C23A;
 }
 
 .nav-card {
