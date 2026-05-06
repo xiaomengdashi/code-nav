@@ -77,19 +77,25 @@
                 v-for="(item, index) in subsection.items" 
                 :key="index"
               >
-                <el-card 
-                  shadow="hover" 
-                  class="nav-card"
-                  @click="openLink(item.url)"
+                <a
+                  :href="item.url"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="nav-card-link"
                 >
-                  <div class="nav-card-content">
-                    <img :src="item.icon" class="nav-icon" />
-                    <div class="nav-info">
-                      <h3>{{ item.title }}</h3>
-                      <p v-if="!isMobile">{{ item.description }}</p>
+                  <el-card
+                    shadow="hover"
+                    class="nav-card"
+                  >
+                    <div class="nav-card-content">
+                      <img :src="item.icon" class="nav-icon" />
+                      <div class="nav-info">
+                        <h3>{{ item.title }}</h3>
+                        <p v-if="!isMobile">{{ item.description }}</p>
+                      </div>
                     </div>
-                  </div>
-                </el-card>
+                  </el-card>
+                </a>
               </el-col>
             </el-row>
           </div>
@@ -104,19 +110,25 @@
               v-for="(item, index) in section.items" 
               :key="index"
             >
-              <el-card 
-                shadow="hover" 
-                class="nav-card"
-                @click="openLink(item.url)"
+              <a
+                :href="item.url"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="nav-card-link"
               >
-                <div class="nav-card-content">
-                  <img :src="item.icon" class="nav-icon" />
-                  <div class="nav-info">
-                    <h3>{{ item.title }}</h3>
-                    <p v-if="!isMobile">{{ item.description }}</p>
+                <el-card
+                  shadow="hover"
+                  class="nav-card"
+                >
+                  <div class="nav-card-content">
+                    <img :src="item.icon" class="nav-icon" />
+                    <div class="nav-info">
+                      <h3>{{ item.title }}</h3>
+                      <p v-if="!isMobile">{{ item.description }}</p>
+                    </div>
                   </div>
-                </div>
-              </el-card>
+                </el-card>
+              </a>
             </el-col>
           </el-row>
         </template>
@@ -142,10 +154,6 @@ const sections = ref(sectionsData)
 const showScrollTop = ref(false)
 const isCollapsed = ref(false)
 const isMobile = ref(false)
-
-const openLink = (url) => {
-  window.open(url, '_blank')
-}
 
 const scrollToSection = (index) => {
   const section = document.getElementById(`section-${index + 1}`);
@@ -295,6 +303,14 @@ onUnmounted(() => {
   border-left: 3px solid #67C23A;
 }
 
+.nav-card-link {
+  display: block;
+  width: 100%;
+  color: inherit;
+  text-decoration: none;
+  padding: 0;
+}
+
 .nav-card {
   width: 100%;
   cursor: pointer;
@@ -303,7 +319,7 @@ onUnmounted(() => {
   transition: all 0.3s;
 }
 
-.nav-card:hover {
+.nav-card-link:hover .nav-card {
   transform: translateY(-5px);
 }
 
